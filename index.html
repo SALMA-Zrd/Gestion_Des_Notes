@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion Des Notes</title>
+    <!-- Lien vers le favicon -->
+    <link rel="icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+    <div class="crud">
+
+        <div class="head">
+            <img src="images/logo.png" alt="Logo du projet" id="projectLogo">
+            <h1> Gestion Des Notes  </h1>
+        </div> 
+       
+        
+
+            <div class="inputs">
+
+                <div class="info">
+                    <input type="text" placeholder="Nom" id="nom">
+            <input type="text" placeholder="Prénom" id="prenom">
+            <input type="text" pattern="[A-Za-z0-9]+" placeholder="CNE" id="CNE" required>
+        
+
+                </div>
+             
+    
+        
+             <div class="hello">
+             <input type="text" placeholder="Module" id="module">
+             <input type="number" placeholder="Note" id="note">
+             <button id="btn" > Ajouter </button>  
+            
+            </div> 
+            <div class="searchBlock">
+                <input type="text" placeholder="Search..." id="search">
+
+            <div class="btnSearch">
+               
+                <button id="searchCNE" onclick="SearchCNE ()"> Search By CNE</button>
+                <button id="deleteAllButton" onclick="deleteAll ()"> Delete All</button>
+                <button onclick="resetTable()" id="reset" style="display: none;" > Reset Table </button>
+                <button id="searchModule" onclick="SearchModule ()"> Search By Module</button>
+            </div>
+
+            </div>
+
+            
+              
+        
+           
+        
+        
+           
+
+             
+    </div>
+
+    <div class="outputs">
+        <table>
+            <tr>
+                <th> CNE</th>
+                <th> Nom</th>
+                <th> Prénom</th>
+                <th> Module</th>
+                <th> Note</th>
+                <th> Statut</th> 
+                <th> Update</th> 
+                <th> Delete</th> 
+            </tr>
+
+           
+            <tbody id="tbody">
+                
+                
+            </tbody>
+        </table>
+    </div>
+    
+        
+</div >
+
+
+
+    
+
+    <script src="index.js"></script>
+</body>
+</html>
