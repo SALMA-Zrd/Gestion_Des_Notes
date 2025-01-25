@@ -30,4 +30,4 @@ Une application web permettant de gérer les notes des étudiants efficacement, 
 ### Installation
 1. Clonez le dépôt GitHub :
    ```bash
-   git clone https://github.com/SALMA-Zrd/Gestion_Des_Notes.git
+    https://github.com/SALMA-Zrd/Gestion_Des_Notes.git
